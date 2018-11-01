@@ -1,7 +1,19 @@
 # ember-data-chained-computed
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is for an issue reported to ember-data here:
+
+
+tests/unit/nested-computed-test.js file shows the issue.
+
+The computed dependencies:
+
+* Message.people
+    * Message.recipientsById
+        * Message.recipients.[]
+        * Message.group.people.[]
+            * Group.groupMembers.@each.roles
+
+In Ember and Ember Data 3.5.0, an update to add a new groupMember to the Group does not result in Message.people updating. In 2.18 the update did occur, the test passes.
 
 ## Prerequisites
 
