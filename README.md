@@ -1,9 +1,9 @@
 # ember-data-chained-computed
 
 This is for an issue reported to ember-data here:
+https://github.com/emberjs/data/issues/5731
 
-
-tests/unit/nested-computed-test.js file shows the issue.
+The [tests/unit/nested-computed-test.js](https://github.com/jrburke/ember-data-chained-computed/blob/master/tests/unit/nested-computed-test.js) file shows the issue.
 
 The computed dependencies:
 
